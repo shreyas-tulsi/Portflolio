@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <style>
+     
+     </style>
+   <!--Linking the bootstrap css file in the bootstrap 4.3.1 folder, in order for the custom styling to take place -->
+   <link rel="stylesheet" type="text/css" href="Bootstrap_4.3.1/css/bootstrap.css" media="screen"/>
+   
+   <!--Defining the meta charset as utf-8, because it's the default-->
+   <meta charset="utf-8">
+   
+  <!--Placing the nav bar inside of the header as it should always appear at the topmost portion of the page, for easy accesibility -->
+   <header>
+  
+  <!--Placing the nav bar inside of a container so, it presets with equal spaces on both sides, making it centered-->
+   <div class="container">
+    <!--Using the bootstrap, and assigning the stylings of the nav bar according to the bootstrap.css file -->
+    <nav class="nav nav-pills nav-fill">
+    <!--Making the link type active ensures that that the link is highlighted in blue, making it clear which one the user is hovering over -->
+       <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="Last_AboutMe.html"> About Me</a>
+         <a class="nav-item nav-link" href="Last_Resume.html"> Resume</a>
+         <a class="nav-item nav-link"  href="Last_Projects.html"> Projects</a>
+          <a class="nav-item nav-link" href="Last_ContactMe.html"> Contact Me</a>
+      <!--Each html file is linked, as a nav-item so it appears on the nav bar for the user to easily click on and view -->
+     </nav>
+   </div>
+ 
+ 
+  
+ </head>
+ <!--Will be there in all files, making background color black -->
+ <body style="background-color:black;">
+   <div class="container">
+     <div class="jumbotron">
+   <!--Placing the jumbotron inside of the container, places padding on both sides of the content, which is compliant to the initial directions -->
+   <center><h1>Shreyas Tulsi Engineering Portfolio</h1></center>
+   <!--Main heading of the page is labeled in h1, is centered, and there is a break to create space between the title and the content-->
+   <br>
+   <center><p>Freshman at Dublin High School</br> Current Occupation: Martial Arts Instructor</br>
+   Interests: Golf, Computer Science, Martial Arts </p></center>
+   <!--Central ideas about me are listed, centered, and then the about me is linked, if they want to dive deep into those central ideas-->
+  
+   <center><a href="Last_AboutMe.html">Read More Here!</a></center>
+  
+   </div>
+   </div>
+   </body>
+<section class="container">
+<div class="row">
+  <!--All of the cards are also placed inside of a container, to ensure the padding on both sides, compliant to the instructions, and also placed inside of a row so they are lned up-->
+  
+  <div class = "col-sm-6">
+<!--Since the bootstrap spans 12 columns, and I wanted 2 cards, each card is a col-sm-6 -->
+  <div class="card flex-sm-row flex-fill">
+  <div class="card-body">
+    <!--Actual content of the card is contained inside of the card flex-sm-row flex-fill so the maximum amount of whitespace is being removed, and then the card-body contains the image on upper right hand corner -->
+    <h4><b>Work Experience</b></h4>
+    <h3>Martial Arts Instructor</h3>
+    <h5> Starting Summer 2019  </h5>
+    <!--All of the cards are in a format, 
+    Bolded H4 Heading: Main Point
+    h3: specific idea
+    h5, time the idea occured
+    p: description of the work experience/ idea-->
+    <p>My experience
+      teaching thus far
+      has taught me
+      more than I had
+      ever imagined. One of these traits I have learn is being able to convey information in a manner which it is both engaging, but also enriching.</br>
+      
+      <a href="Last_AboutMe.html">Read More Here!</a>
+    </p>
+    </div>
+    <img src="Images/MartialArts.JPG" style = "width:140px;
+  height:120px; ">
+  <!--Specified width for all of the images is 140, height is 120 so they are congruent and fit necessary to the amount of space -->
+    </div>
+  <!--Img is floated towards the right, so the text doesn't appear overcrowed, and the whitespace is filled-->
+  </div>
+  
+  
+  <div class = "col-sm-6">
+    <!--Second half of the top row-->
+  <div class="card flex-sm-row flex-fill">
+    
+  <div class="card-body">
+    <h4><b>Projects</b></h4>
+    <h3>Python Projects</h3>
+    <h5>Graphing.py(Independantly Created)</h5>
+    <!--All of the cards are in a format, 
+    Bolded H4 Heading: Main Point
+    h3: specific idea
+    h5, time the idea occured
+    p: description of the work experience/ idea-->
+    <p>This project allows users to grpahically represent their data, in any way that they desire. Additionally, my program performs statistical analysis on the datasets and then outputs those analytics, right on the graph
+
+    </br>
+      
+      <a href="Last_Projects.html">Read More Here!</a>
+    </p>
+    <!--All of the cards are in a format, 
+    Bolded H4 Heading: Main Point
+    h3: specific idea
+    h5, time the idea occured
+    p: description of the work experience/ idea-->
+    </div>
+    <img src="Images/Graph.png" style = "width:140px;
+  height:120px; ">
+  <!--Img is floated towards the right, so the text doesn't appear overcrowed, and the whitespace is filled-->
+  </div>
+  </div>
+  
+  <div class = "col-sm-6">
+
+  <div class="card flex-sm-row flex-fill">
+  <div class="card-body">
+    <h4><b>Volunteer Experience</b></h4>
+    <h3>Python Mentor @ T.V.C</h3>
+    <h5>Starting in 2017</h5>
+    <p>Every Wednesday, I am blessed with the oppurtunity to educate younger kids on the fundamentals of Python and watch them use their creativity, and computer science skills to make their project!</p>
+    <br>
+  
+    <!--All of the cards are in a format, 
+    Bolded H4 Heading: Main Point
+    h3: specific idea
+    h5, time the idea occured
+    p: description of the work experience/ idea-->
+      <a href="Last_AboutMe.html">Read More Here!</a>
+      <br>
+    </div>
+    <img src="Images/Coderdojo.jpg" style = "width:140px;
+  height:120px; ">
+  
+  <!--Img is floated towards the right, so the text doesn't appear overcrowed, and the whitespace is filled-->
+  </div>
+  </div>
+  
+  
+  <div class = "col-sm-6">
+
+  <div class="card flex-sm-row flex-fill">
+  <div class="card-body">
+    <h4><b>Projects</b></h4>
+    <h3>Scratch Project</h3>
+    <h5>Head Soccer- Collaboration with Mason Valentine</h5>
+    <p>Head Soccer is a one player soccer game, where players can move around using arrow keys, to strike the soccer ball into their respective goals, against a C.P.U. </br>
+    <br>
+    <!--All of the cards are in a format, 
+    Bolded H4 Heading: Main Point
+    h3: specific idea
+    h5, time the idea occured
+    p: description of the work experience/ idea-->
+      
+      <a href="Last_Projects.html">Read More Here!</a></p>
+      </div>
+    <img src="Images/Scratch.png" style = "width:140px;
+  height:120px; ">
+  <!--Img is floated towards the right, so the text doesn't appear overcrowed, and the whitespace is filled-->
+  </div>
+  </div>
+  
+  
+</div>
+</div>
+</div>
+</div>
+<!--Footer contains 3 images, which are not linked due to Mr.Lee's requests, but can be used for employers to contact employee's-->
+<br>
+
+
+<div class ="jumbotron">
+
+<div class = "container">
+  <!--Again, the footer is a jumbotron in a container, in order for it to have padding on both sides making it compliant to instructions-->
+  <div class ="row">
+    <div class="col-sm-3">
+      <img src="Images/email.png" height= "75";
+    width = "75"; align = "left" padding-top= "50";>
+    <!--Bootstrap row is 12-columns and I wanted 3 images to be taken, with one space, thus making them each a col-sm-3-->
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/linkeden.jpg"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+    <!--All images are linked towards the left side, and given a specific width and height to make them like similar, as well as ensuring the images don't get stretched-->
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/DHS2.png"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+  
+    </div>
+  </div>
+  
+</div>
+ 
+</footer>
+</html>
+

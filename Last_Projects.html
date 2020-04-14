@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Initial Styling is used to make the flip card animation -->
+    <style>
+      
+      .flip-card {
+  background-color: transparent;
+  width: 450px; /*Specified width and height, at the start so cards come accross congruent */
+  height: 450px; 
+  border: 1px solid #f1f1f1;
+  perspective: 750px; /*Used for the 3 dimesnional effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+      </style>
+   <!--Linking the bootstrap css file in the bootstrap 4.3.1 folder, in order for the custom styling to take place -->
+   <link rel="stylesheet" type="text/css" href="Bootstrap_4.3.1/css/bootstrap.css" media="screen"/>
+   
+   <!--Defining the meta charset as utf-8, because it's the default-->
+   <meta charset="utf-8">
+   
+  <!--Placing the nav bar inside of the header as it should always appear at the topmost portion of the page, for easy accesibility -->
+   <header>
+  
+  <!--Placing the nav bar inside of a container so, it presets with equal spaces on both sides, making it centered-->
+   <div class="container">
+    <!--Using the bootstrap, and assigning the stylings of the nav bar according to the bootstrap.css file -->
+    <nav class="nav nav-pills nav-fill">
+    
+       <a class="nav-item nav-link " href="index.html">Home</a>
+        <a class="nav-item nav-link " href="Last_AboutMe.html"> About Me</a>
+        
+         <a class="nav-item nav-link" href="Last_Resume.html"> Resume</a>
+         <!--Making the link type active ensures that that the link is highlighted in blue, making it clear which one the user is hovering over -->
+         <a class="nav-item nav-link active"
+           href="Last_Projects.html"> Projects</a>
+          <a class="nav-item nav-link" href="Last_ContactMe.html"> Contact Me</a>
+      <!--Each html file is linked, as a nav-item so it appears on the nav bar for the user to easily click on and view -->
+     </nav>
+   </div>
+<body style = "background-color:black;">
+    
+    <div class="container">
+     <div class="jumbotron">
+   <!--Placing the jumbotron inside of the container, places padding on both sides of the content, which is compliant to the initial directions -->
+   <center><h1>Shreyas Tulsi Projects</h1></center>
+   <!--Main heading of the page is labeled in h1, is centered, and there is a break to create space between the title and the content-->
+  
+   
+  
+  
+   </div>
+   </div>
+    
+<section class="container">
+<div class="row">
+  <!--One column filler from the left-side to make sure it is align with the container-->
+  
+   <!--Each card will now fill 5 columns with a 2 column break in betwen them -->
+  <div class = "col-sm-5" >
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+       <!--Front portion of the card's image is defined and given specified width, height-->
+      <img src="Images/fornite.jpeg" alt="Avatar" style="width:450px
+  ;height:450px
+  ;">
+    </div>
+    <div class="flip-card-back">
+       <!--Backside of the card-->
+      <h4><b>Python Project</b></h4>
+ <!--Format that is followed throughout all of these cards:
+ h4 Bolded, Type of Project
+ h3 Name of Project and/or contributors
+ p: Descriping the project, how to play, how was it made, what did I learn
+ a: Link to either download the game on your own computer, or weppage where you can view it -->
+   <h3>FortniteStats.py</h3>
+  <h5>Summer 2019</h5>
+  <p>ForniteStats.py was a project that I had made for my pleasure to track your Fortnite stats. The program allowed you to enter your psn, xbox or pc username and then the stats would be sent to your phone number. The stats being sent were the players, solo wins, duo wins, squad wins, as well as their kill to death ratio. To accomplish this objective I used web scraping to obtain the information, and then used the STMP module to send the text messages. By logging in to my personal email, I was able to use SMTP to construct a message which would then be sent to the person's phone number using their specified carrier. They would recieve 3 messages, each one for a different statistic. I recommend that you check out my project first-hand with the link below!  </br>
+    <br>
+  <a href = "Graphing.py" download style = "color: black;"> Downloadable Link </a>
+  <!--Download tag is used inside of my a tag, so the user is able to download my python project, without an external link-->
+  
+  </p>
+
+    </div>
+  </div>
+</div>
+
+  
+  <!--All images except for one follow this format, which is that the images are floated to right, in order to cover white space and then given a specific width and height so they are congruent-->
+  
+  </div>
+  <div class= "col-sm-2">
+     <!--Two Column filler between the two different cards-->
+  </div>
+  <div class = "col-sm-5">
+    
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/Graph.png" alt="Avatar" style="width:450px
+  ;height:450px
+  ;">
+    </div>
+    <div class="flip-card-back">
+      
+ <!--Format that is followed throughout all of these cards:
+ h4 Bolded, Type of Project
+ h3 Name of Project and/or contributors
+ p: Descriping the project, how to play, how was it made, what did I learn
+ a: Link to either download the game on your own computer, or weppage where you can view it -->
+   <h4><b>Projects</b></h4>
+   <h3>Python</h3>
+   <h5>Graphing.py(March 2020)</h5>
+   <p>This project allows a user to represent their data visually in any way that they desire. These methods include, pie chart, bar chart, hisogram, and a line chart. The user inputs this data from the terminal, or from a file and the output presented is a graph, with relevant statistical analysis calculated by my program. The most valuable experience from this program, was learning about the Matplotlib module, and the endless possibilities that exist within it. Some challenges were determining which input collecting method would be most intuitive for my speicific program.</p>
+   <br>
+   <a href  style = "color: black;" = "https://drive.google.com/file/d/14UqZfV_jz4F3IGifxI5otcjpHPMJ3JBh/view?usp=sharing"> Downloadable link  </a>
+
+    </div>
+  </div>
+</div>
+  </div>
+   <!--New row starts, and again there is a one column filler-->
+
+
+ <div class = "col-sm-5" >
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/TicTacToe.png" alt="Avatar" style="width:450px
+  ;height:450px
+  ;">
+    </div>
+    <div class="flip-card-back">
+      
+ <!--Format that is followed throughout all of these cards:
+ h4 Bolded, Type of Project
+ h3 Name of Project and/or contributors
+ p: Descriping the project, how to play, how was it made, what did I learn
+ a: Link to either download the game on your own computer, or weppage where you can view it -->
+   <h4><b>Python Project</b></h4>
+   <h3>TicTacToe.py</h3>
+   <h5>January, 2020</h5>
+   <p>TicTacToe.py was a game I created, in which a user could play a fully-functional game of TicTacToe against a computer opponent. To create the game board, I assigned each portion of the board to a certain index, making it simple to replace the white space, with an 'X' or a 'O'. To have a cleaner interface, I used pythons system module to clear the terminal after each turn. Try and see if you can defeat the C.P.U in a game of Tic-Tac-Toe with the link below! </br></p>
+    
+     <a href = "TicTacToe.py" download style = "color: black;"> Downloadable Link </a>
+
+
+</div>
+    </div>
+  </div>
+</div>
+  <div class ="col-sm-2">
+     <!--Two Column break between the two cards-->
+  </div>
+  <div class = "col-sm-5" >
+
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Images/Scratch.png" alt="Avatar" style="width:450px
+  ;height:450px
+  ;">
+    </div>
+    <div class="flip-card-back">
+      <h4><b>Projects</b></h4>
+   <h3>Scratch Project</h3>
+   <h5>October 2019(CSP CLASS)</h5>
+   <h5>Head Soccer- Collaboration with Mason Valentine</h5>
+   <p>If I made Head Soccer just a one player-game with a constant opponent, people would have eventually gotten bored of the game and stop playing. Due to this reason, I needed to find a way in which I could keep increasing the difficulty(essentially increasing the skill of the opposition). The way I did this was by controlling the reactiveness of the C.P.U concerning the player's movements. As you completed a series of levels, the C.P.U's delay would be reduced everytime by 500 milliseconds. This way, the player constantly felt challenged and experienced a true sense of accomplishment when they finished. An extremely important lesson I learnt was how my program to appeal to an audience, and keep them attracted.</br>
+    
+     <a href style = "color: black;"="https://scratch.mit.edu/projects/328139919">
+     Link to Project Page</a>
+
+
+    
+     
+
+
+</div>
+    </div>
+  </div>
+  
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  </body>
+
+
+<br>
+
+<footer class ="jumbotron">
+
+  <!--Again, the footer is a container in a jumbotron, in order for it to line up evenly with all of the cards -->
+  <div class ="row">
+    <div class="col-sm-3">
+      <img src="Images/email.png" height= "75";
+    width = "75"; align = "left" padding-top= "50";>
+    <!--Bootstrap row is 12-columns and I wanted 3 images to be taken, with one space, thus making them each a col-sm-3-->
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/linkeden.jpg"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+    <!--All images are linked towards the left side, and given a specific width and height to make them like similar, as well as ensuring the images don't get stretched-->
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/DHS2.png"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+  
+    </div>
+  </div>
+  
+</footer>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--Initial styling is  used in order to remove the need of centering each h3, and h1 tag manually in the html code-->
+
+    <style>
+      h3, h1{
+        text-align: center;
+        
+        
+      }
+      .container{
+        color: black;
+      }
+      
+     
+      </style>
+    
+    <!--Linking the bootstrap css file in the bootstrap 4.3.1 folder, in order for the custom styling to take place -->
+   <link rel="stylesheet" type="text/css" href="Bootstrap_4.3.1/css/bootstrap.css" media="screen"/>
+   
+   <!--Defining the meta charset as utf-8, because it's the default-->
+   <meta charset="utf-8">
+   
+  <!--Placing the nav bar inside of the header as it should always appear at the topmost portion of the page, for easy accesibility -->
+   <header>
+  
+  <!--Placing the nav bar inside of a container so, it presets with equal spaces on both sides, making it centered-->
+   <div class="container">
+    <!--Using the bootstrap, and assigning the stylings of the nav bar according to the bootstrap.css file -->
+    <nav class="nav nav-pills nav-fill">
+    
+       <a class="nav-item nav-link " href="index.html">Home</a>
+        <a class="nav-item nav-link " href="Last_AboutMe.html"> About Me</a>
+        
+         <a class="nav-item nav-link active" href="Last_Resume.html"> Resume</a>
+         <!--Making the link type active ensures that that the link is highlighted in blue, making it clear which one the user is hovering over -->
+         <a class="nav-item nav-link"  href="Last_Projects.html"> Projects</a>
+          <a class="nav-item nav-link " href="Last_ContactMe.html"> Contact Me</a>
+        
+      <!--Each html file is linked, as a nav-item so it appears on the nav bar for the user to easily click on and view -->
+     </nav>
+   </div>
+<body style = "background-color: black; color: white;">
+    <br>
+      <!--Container in jumbotron is used, to make the content stretch across the whole screen( no whitespace) -->
+      <div class="jumbotron">
+      <div class="container">
+      <h1> Shreyas Tulsi Resume</h1>
+      <center><a href = "Resume.pdf" download> Downloadable Link </a></center>
+      <!--By using the a tag with a download option, as wells as linking my Resume.pdf, I can provide a Downloadable link to the user -->
+      </div>
+    </div>
+      <br>      
+      <h3>Career Goal</h3>
+      <center>
+      Professional Golf Player</center>
+      <center>Computer Science field incorporated with Artificial Intelligence</center>
+      <br>
+    <!--Format Followed Throughout the Entire Resume
+    h3: Big Section(ex Career Goal) 
+    two centered text , containing the actual content that applies to me(ex: Professional Golf Player, Computer Scientist-->
+     <h3>Education</h3>
+     <center>Cumulative GPA: 4.0</center>
+     <center>Current School: Dublin High School</center>
+     <center>High School Graduation Year: 2023</center>
+     <center>College of Interests: Harvard, MIT, Stanford, Cal Poly</center>
+     <br>
+     
+     <h3>Achievements</h3>
+    
+    <center>Top 1% in Cyber Patriot out of all teams(2019-2020) Round 1</center>
+    <center>Top 150 in all teams for PICO CTF</center>
+    <center>Top Middle School Team CCIC(2018-2019)</center>
+    <center>MOEMS High Scorer Award
+    </center>
+    <br>
+     <!--Break is given between each unique sections, so the information is not clumped together and is seperated-->
+     <h3>Work/Volunteer Experience</h3>
+     <center>Current Occuption: Martial Arts Instructor</center>
+    <center>Every week, volunterring as a Computer Science Python Mentor at Tri Valley Coderdojo</center>
+    <center>Helping out at the Splatter Festival as part of the clean up committe</center>
+     <br>
+
+   
+    <h3>Languages</h3>
+    
+    <center>Fluent Languages: English, Hindi</center>
+    <center>A-Level French 2 Student</center>
+    
+    <br>
+    <h3>References</h3>
+    
+    <center>Empower Martial Arts Owner: Shihan Shir</center>
+    <center>Adv English 1 Teacher: Gabriella Vidrio</center>
+    <center>Computer Science Principles Teacher: Thomas Lee</center>
+    <center>Adv Alg II Teacher: Madeiros Nadine</center>
+
+    
+    
+   
+
+  </body>
+<footer>
+  <br>
+  <br>
+<div class ="jumbotron">
+<div class = "container">
+  <!--Again, the footer is a jumbotron in a container, in order for it to have padding on both sides making it compliant to instructions-->
+  <div class ="row">
+    <div class="col-sm-3">
+      <img src="Images/email.png" height= "75";
+    width = "75"; align = "left" padding-top= "50";>
+    <!--Bootstrap row is 12-columns and I wanted 3 images to be taken, with one space, thus making them each a col-sm-3-->
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/linkeden.jpg"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+    <!--All images are linked towards the left side, and given a specific width and height to make them like similar, as well as ensuring the images don't get stretched-->
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/DHS2.png"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+  
+    </div>
+  </div>
+  
+</div>
+</html>

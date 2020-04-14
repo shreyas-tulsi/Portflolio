@@ -1,0 +1,97 @@
+2<!DOCTYPE html>
+<html>
+  <head>
+   <!--Linking the bootstrap css file in the bootstrap 4.3.1 folder, in order for the custom styling to take place -->
+   <link rel="stylesheet" type="text/css" href="Bootstrap_4.3.1/css/bootstrap.css" media="screen"/>
+   
+   <!--Defining the meta charset as utf-8, because it's the default-->
+   <meta charset="utf-8">
+   
+  <!--Placing the nav bar inside of the header as it should always appear at the topmost portion of the page, for easy accesibility -->
+   <header>
+  
+  <!--Placing the nav bar inside of a container so, it presets with equal spaces on both sides, making it centered-->
+   <div class="container">
+    <!--Using the bootstrap, and assigning the stylings of the nav bar according to the bootstrap.css file -->
+    <nav class="nav nav-pills nav-fill">
+    
+       <a class="nav-item nav-link " href="index.html">Home</a>
+        <a class="nav-item nav-link active" href="Last_AboutMe.html"> About Me</a>
+        <!--Making the link type active ensures that that the link is highlighted in blue, making it clear which one the user is hovering over -->
+         <a class="nav-item nav-link" href="Last_Resume.html"> Resume</a>
+         <a class="nav-item nav-link"  href="Last_Projects.html"> Projects</a>
+          <a class="nav-item nav-link" href="Last_ContactMe.html"> Contact Me</a>
+      <!--Each html file is linked, as a nav-item so it appears on the nav bar for the user to easily click on and view -->
+     </nav>
+   </div>
+  
+  <body style = "background-color: black;">
+    
+    <div class="jumbotron">
+    <div class = "container">
+      <!--Instead of making a jumbtron inside of a container, like index.html, we made a container inside a jumbotron to make it stretch the whole page, compliant to the instructions  -->
+    <center><h1>Online Portfolio</h1></center>
+    <center><h2>Shreyas Tulsi</h2></center>
+    <!--Similarily to index.html the main points are centered and enlarged -->
+    </div>
+    </div>
+    <!--Img is placed inside of a container, given a specified width and height to make sure it covers the given whitespace, and be right next to the text -->
+    <section class="container">
+        <img src="Images/Final.jpg" height= "552px" width="395px"align="left" alt="l">
+    </section>
+    <section class="container">
+    <!--Since the text is a completely seperate container, I used a col-sm-12 to cover all of the whitespace possible with my About Me text -->
+     <div class="row">
+       <div class="col-sm-12 text-left" style = "background-color: rgb(204,229, 255)">
+         <!--Text is highlighted in this light blue color, as the background is black and it contrasts well -->
+         <p>
+           My name is Shreyas Tulsi and my plan shortly is to either become a Professional Golf Player or dive deep into the world of artificial intelligence. To achieve my second goal, I will take all of the classes in high school necessary like CSP Principles and AP CSP, to be admitted into a school with strong computer science resources. From there I will use those experiences taught to me in college, and apply them going into my work career. During this time, I will also be working on creating my projects to help me be an expert in the field of Artifical Intelligence.
+            <!--Three seperate paragraphs about myself as instructed by the directions, and a break between each one to show the changing of paragraphs -->
+         </p>
+         <br>
+         <p>
+           One characteristic that I believe will lead me to success, no matter what field I go into, is my uncanny ability to stay persistent until a problem is completed. For example, when I am completing activities like homework, a coding project or even a physical activity; my mind doesn't come to rest until the problem is completed. I believe this persistence will keep me going through the struggles of my life, making me stronger and better prepared to complete the tasks at hand then my peers. Some of my major accomplishments was getting in the top 1% of all Cyber Patriot Teams, Winning Highest Scorers award in Math Olympiad, and becoming an Instructor at Empower Martial Arts. During my work experience of teaching martial arts, I was able to learn how to display information that is not only informative; but also engaging, which I believe is one of the most important skills a person can have
+          </p>
+           <br>
+          <p>
+            Using all of these learned skills, experiences and personal strengths, I believe that I would be an extremely capable employee for any software development company. If you would like to the things I have discussed in greater detail, please head over to the rest of my pages. Thank you very much for giving me a chance, and I hope that I can be resourceful to you in some way!
+           
+        </p></div>
+      </div>
+    </div>
+<br>
+<br>
+</section>
+
+ <!--Container inside of a jumbtron is used, so the background covers the whole footer(doens't leave any whitespaces-->
+
+<footer>
+
+<div class ="jumbotron">
+<div class = "container">
+  <!--Again, the footer is a jumbotron in a container, in order for it to have padding on both sides making it compliant to instructions-->
+  <div class ="row">
+    <div class="col-sm-3">
+      <img src="Images/email.png" height= "75";
+    width = "75"; align = "left" padding-top= "50";>
+    <!--Bootstrap row is 12-columns and I wanted 3 images to be taken, with one space, thus making them each a col-sm-3-->
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/linkeden.jpg"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+    <!--All images are linked towards the left side, and given a specific width and height to make them like similar, as well as ensuring the images don't get stretched-->
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/DHS2.png"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+  
+    
+  </div>
+  
+</div>
+</html>

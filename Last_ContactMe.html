@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2{
+        color: white;
+      }
+      </style>
+  <!--The color of h2 elements is white, because the bacckground is black providing a nice contrast -->
+   <!--Linking the bootstrap css file in the bootstrap 4.3.1 folder, in order for the custom styling to take place -->
+   <link rel="stylesheet" type="text/css" href="Bootstrap_4.3.1/css/bootstrap.css" media="screen"/>
+   
+   <!--Defining the meta charset as utf-8, because it's the default-->
+   <meta charset="utf-8">
+   
+  <!--Placing the nav bar inside of the header as it should always appear at the topmost portion of the page, for easy accesibility -->
+   <header>
+  
+  <!--Placing the nav bar inside of a container so, it presets with equal spaces on both sides, making it centered-->
+   <div class="container">
+    <!--Using the bootstrap, and assigning the stylings of the nav bar according to the bootstrap.css file -->
+    <nav class="nav nav-pills nav-fill">
+    
+       <a class="nav-item nav-link " href="index.html">Home</a>
+        <a class="nav-item nav-link " href="Last_AboutMe.html"> About Me</a>
+        
+         <a class="nav-item nav-link" href="Last_Resume.html"> Resume</a>
+         <a class="nav-item nav-link"  href="Last_Projects.html"> Projects</a>
+          <a class="nav-item nav-link active" href="Last_ContactMe.html"> Contact Me</a>
+        <!--Making the link type active ensures that that the link is highlighted in blue, making it clear which one the user is hovering over -->
+      <!--Each html file is linked, as a nav-item so it appears on the nav bar for the user to easily click on and view -->
+     </nav>
+   </div>
+  <body style ="background-color: black";>
+    <br>
+    <!--Container inside of a jumbotron is used, in order for the content to cover the whole screen, and not leave any whitespaces -->
+    <div class="jumbotron">
+    <div class = "container">
+    <center><h1>Contact Me</h1></center>
+    <center><h1>Shreyas Tulsi</h1></center>
+    <!--Key points are centered, and enlarged to show their significacne -->
+    </div>
+    </div>
+    
+    <center><h2><b>Email:</b> shreyastulsi@gmail.com</h2></center>
+    <br>
+    <center><h2><b>Github: </b><a href = "https://github.com/">shreyway786</a></h2></center>
+    <br>
+    <center><h2><b>Instagram: </b><a href = "https://www.instagram.com/shreyway_/">@shreyway_</a></h2></center>
+    <br>
+    <center><h2><b>Location: </b>Dublin, CA</h2></center>
+    <!--All of my contact information, is in h2
+    The first part like email, github and Instagram are bolded, while the actual information is normal, to show a contrast -->
+  </body>
+<br>
+<footer>
+<div class ="jumbotron">
+<div class = "container">
+  <!--Again, the footer is a jumbotron in a container, in order for it to have padding on both sides making it compliant to instructions-->
+  <div class ="row">
+    <div class="col-sm-3">
+      <img src="Images/email.png" height= "75";
+    width = "75"; align = "left" padding-top= "50";>
+    <!--Bootstrap row is 12-columns and I wanted 3 images to be taken, with one space, thus making them each a col-sm-3-->
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/linkeden.jpg"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+    <!--All images are linked towards the left side, and given a specific width and height to make them like similar, as well as ensuring the images don't get stretched-->
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="Images/DHS2.png"
+    height= "75";
+    width = "75"; align = "left">
+    </div>
+  
+    </div>
+  </div>
+  
+</div>
+</html>
